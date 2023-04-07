@@ -58,7 +58,7 @@ def goBack():
 def basicPageSetup(pageNo):
     global left_frame, right_frame, heading
 
-    back_img = tk.PhotoImage(file= r"C:\Users\maury\Desktop\Facial-Recognition-for-Crime-Detection\img\back.png")
+    back_img = tk.PhotoImage(file= r"C:\Users\VIPIN KUMAR\Desktop\Facial-Recognition-for-Crime-Detection\img\back.png")
     back_button = tk.Button(pages[pageNo], image=back_img, bg="#3E3B3C", bd=0, highlightthickness=0,
            activebackground="#3E3B3C", command=goBack)
     back_button.image = back_img
@@ -328,7 +328,7 @@ def showCriminalProfile(name):
     
     (id, crim_data) = retrieveData(name)
 
-    path = os.path.join("profile_pics", "criminal %d.png"%id)
+    path = os.path.join("profile_pics", "criminal %d.png" %id)
     profile_img = cv2.imread(path)
 
     profile_img = cv2.resize(profile_img, (500, 500))
@@ -612,10 +612,10 @@ def selectvideo1():
 tk.Label(pages[0], text="Face Recognition System for Criminal Detection", fg="black", bg="#3E3B3C",
       font="Arial 25 bold", pady=30).pack()
 
-logo = tk.PhotoImage(file = r"C:\Users\maury\Desktop\Facial-Recognition-for-Crime-Detection\img\logo2.png")
+logo = tk.PhotoImage(file = r"C:\Users\VIPIN KUMAR\Desktop\Facial-Recognition-for-Crime-Detection\img\logo2.png")
 tk.Label(pages[0], image=logo, bg="#3E3B3C").pack(side='left')
 
-btn_frame = tk.Frame(pages[0], bg="#3E3B3C", pady=30)
+btn_frame = tk.Frame(pages[0], bg="#3E3B3C")
 btn_frame.pack()
 
 tk.Button(btn_frame, text="Input Video", command=selectvideo1)

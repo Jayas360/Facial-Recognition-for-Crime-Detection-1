@@ -66,7 +66,7 @@ def retrieveData(name):
         for i, row in enumerate(reader, 2): # start from row 2
             if len(row) == 0: # handle empty row
                 continue
-            if row[0] == name:
-                print({**dict(zip(headers, row))})
+            if row[0] == name.lower():
+                print("I:",type(i),{**dict(zip(headers, row))})
                 return (1, {**dict(zip(headers, row))})
     return None 

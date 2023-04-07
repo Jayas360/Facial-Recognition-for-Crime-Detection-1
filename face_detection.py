@@ -3,7 +3,7 @@ import cv2
 # from final_encoding import *
 
 def detect(path):
-    facedetect = cv2.CascadeClassifier(r"C:\Users\maury\Desktop\Facial-Recognition-for-Crime-Detection\haarcascade_frontalface_default.xml")
+    facedetect = cv2.CascadeClassifier(r"C:\Users\VIPIN KUMAR\Desktop\Facial-Recognition-for-Crime-Detection\haarcascade_frontalface_default.xml")
     #cam = cv2.VideoCapture(0)
     cam = cv2.VideoCapture(path)
     sampleNum = 0
